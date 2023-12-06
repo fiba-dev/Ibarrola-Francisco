@@ -1,0 +1,167 @@
+/* @keyframes minToMax {
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
+} */
+
+.icons {
+	height: 150px;
+	width: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.whatsapp {
+	height: 80px;
+	width: 70px;
+	transition: ease 0.5s;
+}
+.whatsapp:hover {
+	height: 110px;
+	width: 100px;
+}
+.linkedin {
+	height: 70px;
+	align-items: center;
+	transition: ease 0.5s;
+}
+.linkedin:hover {
+	height: 100px;
+}
+.gmail {
+	height: 70px;
+	width: 75px;
+	transition: ease 0.5s;
+}
+.gmail:hover {
+	height: 95px;
+	width: 100px;
+}
+
+.container_contacto {
+	margin-top: 100px;
+	min-height: 600px;
+	height: 90vh;
+	width: 98vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: rgb(255, 255, 255);
+}
+.div__form {
+	background: rgb(255, 255, 255);
+
+	width: 90vw;
+	height: 50vh;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	/* animation-name: minToMax;
+	animation-duration: 1s; */
+	justify-content: space-around;
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+		0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+		0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+		0 100px 80px rgba(0, 0, 0, 0.12);
+	-webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+		0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+		0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+		0 100px 80px rgba(0, 0, 0, 0.12);
+	-moz-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+		0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+		0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+		0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.input {
+	height: 30px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.form {
+	height: 70vh;
+	width: 80vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	animation-duration: 3s;
+}
+
+.input2 {
+	height: 60px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+}
+@media (min-width: 1080px) {
+	.container_contacto {
+		justify-content: center;
+		background: none;
+		height: 100vh;
+		width: 100vw;
+		align-items: center;
+	}
+	.titulo {
+		text-align: center;
+		font-size: 60px;
+		width: 300px;
+	}
+
+	.robot {
+		display: none;
+	}
+
+	.div__form {
+		width: 35vw;
+		height: 40vh;
+		display: flex;
+		border-radius: 10px;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		font-size: 40px;
+	}
+	.icons {
+		height: 300px;
+		width: 350px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.whatsapp {
+		height: 80px;
+		width: 70px;
+	}
+	.whatsapp:hover {
+		height: 110px;
+		width: 100px;
+	}
+
+	.linkedin {
+		height: 70px;
+	}
+	.linkedin:hover {
+		height: 100px;
+	}
+	.gmail {
+		height: 70px;
+		width: 75px;
+	}
+	.gmail:hover {
+		height: 95px;
+		width: 100px;
+	}
+}

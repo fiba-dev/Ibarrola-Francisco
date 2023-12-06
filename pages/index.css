@@ -1,0 +1,112 @@
+body {
+	font-family: "Open Sans";
+	background-size: cover;
+	background-color: rgb(245, 245, 245);
+	margin: 0px;
+	padding: 0px;
+}
+.main {
+	padding: 0px;
+}
+
+.containerMain {
+	min-height: 90vh;
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
+	justify-content: center;
+}
+.robot {
+	z-index: +10;
+	height: 140px;
+}
+
+.titulo {
+	color: rgb(10, 10, 10);
+	font-family: "Courier New", Courier, monospace;
+	font-size: 45px;
+	text-align: left;
+
+	width: 40%;
+	align-self: center;
+}
+.typed {
+	height: 150px;
+}
+.homeNameDiv {
+	display: flex;
+	flex-direction: column;
+	background-color: none;
+	margin-top: 30px;
+	justify-content: space-between;
+	height: 360px;
+	width: 350px;
+	text-align: center;
+	background-color: -webkit-linear-gradient(
+		top,
+		rgba(1, 1, 1, 0),
+		rgba(1, 1, 1, 0),
+		rgba(12, 245, 132, 0)
+	);
+	background-image: url("https://res.cloudinary.com/fiba06-dev/image/upload/v1646670365/portfolio/robot_2_1_yrfc1h.png");
+	background-position: left;
+	background-size: 130px;
+	background-repeat: no-repeat;
+
+	border-radius: 10px;
+	/* -webkit-box-shadow: 0px 0px 8px 1px #ffdb15;
+	-moz-box-shadow: 0px 0px 8px 1px #ffdb15;
+	box-shadow: 0px 0px 8px 1px #ffdb15; */
+}
+@media (min-width: 1080px) {
+	.containerMain {
+		flex-direction: row;
+		margin-left: 12rem;
+		justify-content: space-between;
+		width: 80vw;
+		height: 100vh;
+		background-image: url("https://res.cloudinary.com/fiba06-dev/image/upload/v1646670365/portfolio/robot_2_1_yrfc1h.png");
+		background-position: bottom left;
+		background-size: 300px;
+		background-repeat: no-repeat;
+	}
+	.homeNameDiv {
+		text-align: center;
+		height: 400px;
+		width: 800px;
+		margin-left: 8rem;
+		background-image: none;
+		/* background: -webkit-linear-gradient(
+				top,
+				rgba(255, 255, 255, 0),
+				rgba(255, 255, 255, 0)
+			),
+			url("https://res.cloudinary.com/fiba06-dev/image/upload/v1646670365/portfolio/robot_2_1_yrfc1h.png");
+		background-position: left;
+		background-size: contain;
+		background-repeat: no-repeat; */
+	}
+	.profile {
+		height: 50vh;
+		width: 20vw;
+		position: fixed;
+		right: 0px;
+	}
+	.robot {
+		object-fit: cover;
+		z-index: +10;
+		height: 300px;
+		color: white;
+		object-position: right;
+	}
+	.typed {
+		height: 500px;
+	}
+	.titulo {
+		text-align: center;
+		font-size: 60px;
+	}
+}
