@@ -1,89 +1,29 @@
+import { useCallback } from "react";
 import Particles from "react-tsparticles";
-import React, { useState } from "react";
-import css from "./index.css";
-export function Particulas(props) {
-	console.log("PROPS DE PARTICLES", props);
+//import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
+import { loadSlim } from "tsparticles-slim";
+import "./index.css";
+
+export const Particulas = () => {
+	const particlesInit = useCallback(async (engine: any) => {
+		console.log(engine);
+		// you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
+		// this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+		// starting from v2 you can add only the features you need reducing the bundle size
+		//await loadFull(engine);
+		await loadSlim(engine);
+	}, []);
+
+	const particlesLoaded = useCallback(async (container: any) => {
+		await console.log(container);
+	}, []);
 
 	return (
 		<Particles
-			options={{
-				style: {
-					width: props.width,
-					position: "relative",
-					height: props.height,
-				},
-
-				fpsLimit: 60,
-				interactivity: {
-					events: {
-						onHover: {
-							enable: true,
-							mode: props.repulse ? "connect" : "",
-						},
-						resize: true,
-					},
-					modes: {
-						bubble: {
-							distance: 400,
-							duration: 2,
-							opacity: 0.4,
-							size: 40,
-						},
-						push: {
-							quantity: 4,
-						},
-						repulse: {
-							distance: 100,
-							duration: 0.4,
-						},
-					},
-				},
-				particles: {
-					color: {
-						value: "rgb(255, 255, 255)",
-					},
-					links: {
-						color: "rgb(255, 255, 255)",
-						distance: 50,
-						enable: true,
-						opacity: 1,
-						width: 1,
-					},
-					collisions: {
-						enable: true,
-					},
-					move: {
-						direction: "none",
-						enable: true,
-						outMode: "bounce",
-						random: false,
-						speed: 2,
-						straight: false,
-					},
-					number: {
-						density: {
-							enable: true,
-							area: 800,
-						},
-						value: props.value,
-					},
-					opacity: {
-						value: 0.9,
-					},
-					shape: {
-						type: "star",
-					},
-					size: {
-						random: true,
-						value: 1,
-					},
-				},
-				detectRetina: true,
-			}}
-			// className={css.particula}
-			// canvasClassName={css.canvas}
-		>
-			<div className={css.fondo}></div>
-		</Particles>
+			id="tsparticles"
+			url="http://foo.bar/particles.json"
+			init={particlesInit}
+			loaded={particlesLoaded}
+		/>
 	);
-}
+};

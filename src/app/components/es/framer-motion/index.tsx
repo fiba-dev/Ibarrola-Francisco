@@ -65,14 +65,7 @@ export const MenuMobil = () => {
 			className="menuMobil"
 		>
 			<motion.div className="backgroundMenu" variants={sidebar}>
-				{isOpen && (
-					<Particulas
-						width={"100vw"}
-						height={"100vh"}
-						value={100}
-						repulse={false}
-					/>
-				)}
+				{isOpen && <Particulas />}
 				<motion.ul variants={variantsUl} className="backgroundUl">
 					<motion.li variants={variants}>
 						<MobileIcon
@@ -124,14 +117,7 @@ export const MenuDesktop = () => {
 			className="menuDesktop"
 		>
 			<motion.div className="backgroundMenu" variants={sidebar}>
-				{isOpen && (
-					<Particulas
-						width="12rem"
-						height="100vh"
-						value={200}
-						repulse={false}
-					/>
-				)}
+				{isOpen && <Particulas />}
 				<motion.ul variants={variantsUl} className="backgroundUl">
 					<motion.li variants={variants}>
 						<DesktopIcon href="#main">Inicio</DesktopIcon>

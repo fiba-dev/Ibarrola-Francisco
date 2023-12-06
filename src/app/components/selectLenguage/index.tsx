@@ -26,14 +26,25 @@ export function SelectLenguageDesktop(props: any) {
 	);
 }
 export function SelectLenguageMobile(props: any) {
+	const router = useRouter();
 	return (
 		<div onClick={props.onClick} className="container_lenguage_mobile">
-			<a className="lenguage" href="/en">
+			<button
+				className="lenguage"
+				onClick={() => {
+					router.push("/en");
+				}}
+			>
 				EN
-			</a>
-			<a className="lenguage" href="/">
+			</button>
+			<button
+				className="lenguage"
+				onClick={() => {
+					router.push("/");
+				}}
+			>
 				ES
-			</a>
+			</button>
 		</div>
 	);
 }
