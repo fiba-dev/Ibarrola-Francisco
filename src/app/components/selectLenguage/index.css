@@ -25,6 +25,8 @@
 	text-decoration: none;
 	transition: ease-in-out 0.5s;
 	color: rgb(255, 255, 255);
+	background-color: transparent;
+	border: none;
 	user-select: none; /* Evita que el contenido se pueda seleccionar */
 	-webkit-user-select: none; /* Para navegadores basados en WebKit (Safari, Chrome) */
 	-moz-user-select: none; /* Para navegadores basados en Gecko (Firefox) */
