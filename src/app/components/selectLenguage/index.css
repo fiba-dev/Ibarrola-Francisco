@@ -58,7 +58,7 @@
 		font-weight: 600;
 		text-decoration: none;
 		transition: ease-in-out 0.5s;
-		color: rgb(93, 0, 180);
+		color: rgba(255, 255, 255, 0.478);
 		user-select: none; /* Evita que el contenido se pueda seleccionar */
 		-webkit-user-select: none; /* Para navegadores basados en WebKit (Safari, Chrome) */
 		-moz-user-select: none; /* Para navegadores basados en Gecko (Firefox) */

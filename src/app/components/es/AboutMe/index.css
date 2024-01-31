@@ -78,25 +78,25 @@
 	padding: 10px;
 
 	border: none;
-	color: rgb(93, 0, 180);
-	background-color: #00000067;
+	color: rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, 0.207);
 	text-decoration: none;
 	font-size: 20px;
 	font-weight: 700;
 	width: 200px;
-	border: solid 1px rgb(93, 0, 180);
+	border: solid 1px rgb(255, 255, 255);
 	border-radius: 10px;
 	transition: 0.5s ease-in;
 	z-index: 0;
 }
 
 .cvlink:hover {
-	color: rgb(93, 0, 180);
+	color: rgb(0, 53, 54);
 	background-color: rgb(255, 255, 255);
-	border: solid 1px rgb(93, 0, 180);
-	-webkit-box-shadow: 1px 0px 8px 3px rgba(93, 0, 180, 0.69);
-	-moz-box-shadow: 1px 0px 8px 3px rgba(93, 0, 180, 0.689);
-	box-shadow: 1px 0px 8px 3px rgba(93, 0, 180, 0.693);
+	border: solid 1px rgb(255, 255, 255);
+	-webkit-box-shadow: 1px 0px 8px 3px rgb(255, 255, 255);
+	-moz-box-shadow: 1px 0px 8px 3px rgb(255, 255, 255);
+	box-shadow: 1px 0px 8px 3px rgb(255, 255, 255);
 }
 @media (min-width: 1024px) and (min-height: 500px) {
 	.container {
