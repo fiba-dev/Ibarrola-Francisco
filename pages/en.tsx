@@ -16,38 +16,47 @@ import { Contact } from "../src/app/components/en/Contact";
 import { Proyects } from "../src/app/components/en/Proyectos";
 import { AboutMeEn } from "../src/app/components/en/AboutMe";
 import { SelectLenguageDesktop } from "../src/app/components/selectLenguage";
-import { LayoutEn } from "../src/app/components/en/Layout/index";
+import {
+	MenuDesktopEn,
+	MenuMobilEn,
+} from "../src/app/components/en/framer-motion";
 const HomePageEn: React.FC = () => {
 	return (
-		<div className="main" id="main">
-			<Analytics />
-			<LayoutEn></LayoutEn>
-			<SelectLenguageDesktop></SelectLenguageDesktop>
-			<div className="containerMain">
-				<div className="homeNameDiv">
-					<h1 className="titulo">¡Hello World!</h1>
-					<div className="typed">
-						<TypedReactHooksDemo velocidad={30} clase={"letra"} loop={false}>
-							{`I'm Fran`}
-						</TypedReactHooksDemo>
+		<>
+			<MenuDesktopEn></MenuDesktopEn>
+			<MenuMobilEn></MenuMobilEn>
+			<Particulas />
 
-						<TypedReactHooksDemo
-							velocidad={20}
-							comenzar={2000}
-							clase={"letra2"}
-							loop={true}
-						>
-							React.js Css Html Typescript Firebase Vercel Postman Scrum Github
-						</TypedReactHooksDemo>
+			<div className="main" id="main">
+				<div className="containerMain">
+					<SelectLenguageDesktop></SelectLenguageDesktop>
+					<Analytics />
+					<div className="homeNameDiv">
+						<h1 className="titulo">¡Hello World!</h1>
+						<div className="typed">
+							<TypedReactHooksDemo velocidad={30} clase={"letra"} loop={false}>
+								{`I'm Fran`}
+							</TypedReactHooksDemo>
+
+							<TypedReactHooksDemo
+								velocidad={20}
+								comenzar={2000}
+								clase={"letra2"}
+								loop={true}
+							>
+								React.js Css Html Typescript Firebase Vercel Postman Scrum
+								Github
+							</TypedReactHooksDemo>
+						</div>
 					</div>
+
+					<AboutMeEn id="aboutme"></AboutMeEn>
 				</div>
 
-				<AboutMeEn id="aboutme"></AboutMeEn>
+				<Proyects></Proyects>
+				<Contact></Contact>
 			</div>
-
-			<Proyects></Proyects>
-			<Contact></Contact>
-		</div>
+		</>
 	);
 };
 

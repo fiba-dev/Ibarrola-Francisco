@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import { TypedReactHooksDemo } from "../../ui/typedJs";
 import "../../es/AboutMe/index.css";
@@ -7,14 +8,12 @@ function AboutMeEn(props: any) {
 			<div className="containerColumn">
 				<div className="column">
 					<p>
-						{"I'm Web Developer in tecnologies like"}
-						<b> JAVASCRIPT, React.js, Node.js, HTML, CSS</b>. With knowledge in
-						Firebase, Express, Next.js, Vercel, Heroku, Postgress, Dropbox,
-						Airtable, Cloudinary, Contenful, Mapbox, Algolia,
-						<b> Excel.js, PdfKit, Moment.js</b>. Documentation using
-						<b> Postman</b>. Version control in
-						<b> Github, GitLab</b> and working whit agile methodologies{" "}
-						<b>(SCRUM)</b>
+						I'm Web Developer with more than 2 years of experience in
+						Javascript. Working with agile methodologies (SCRUM) with
+						multidisciplinary teams, automating tasks, actively participating in
+						the definition of models and new features according to customer
+						needs, using React.js, Node.js, sequelize, Postgress and libraries
+						like Bootstrap, excel.js, pdfkit, bull (cronjobs), moment.js etc..
 					</p>
 				</div>
 				<a

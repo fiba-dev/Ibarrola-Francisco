@@ -25,6 +25,7 @@ const HomePage: React.FC = () => {
 		<>
 			<MenuDesktop></MenuDesktop>
 			<MenuMobil></MenuMobil>
+			<Particulas />
 			<div className="main" id="main">
 				<Analytics />
 				<div className="containerMain">

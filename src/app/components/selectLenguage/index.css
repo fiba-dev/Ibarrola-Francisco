@@ -24,7 +24,7 @@
 	font-weight: 600;
 	text-decoration: none;
 	transition: ease-in-out 0.5s;
-	color: rgb(255, 255, 255);
+	color: rgb(222, 222, 222);
 	background-color: transparent;
 	border: none;
 	user-select: none; /* Evita que el contenido se pueda seleccionar */
@@ -33,7 +33,7 @@
 	-ms-user-select: none; /* Para versiones antiguas de Microsoft Edge */
 }
 .lenguage:hover {
-	color: #cacaca;
+	color: #ffffff;
 }
 @media (min-width: 1080px) {
 	.container_lenguage_mobile {
@@ -65,6 +65,6 @@
 		-ms-user-select: none; /* Para versiones antiguas de Microsoft Edge */
 	}
 	.lenguage:hover {
-		color: #000000;
+		color: #ffffff;
 	}
 }

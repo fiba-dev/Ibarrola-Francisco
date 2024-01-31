@@ -2,6 +2,8 @@ import React from "react";
 
 import "./index.css";
 
+import { Particulas } from "../../ui/particles";
+
 function AboutMe(props: any) {
 	return (
 		<div className="container" id={props.id}>
@@ -9,12 +11,13 @@ function AboutMe(props: any) {
 				<div className="column">
 					<p>
 						{" "}
-						Soy Desarrollador web en tecnologías como
-						<b> JAVASCRIPT, React.js, Node.js, HTML, CSS</b>. Con conocimiento
-						en Firebase, Express, Next.js, Vercel, Heroku, Postgress, Dropbox,
-						Airtable, Cloudinary, Contenful, Mapbox, Algolia, Excel.js, PdfKit,
-						Moment.js. Documentación usando Postman. Control de Versiones en
-						Github, GitLab y trabajando con metodologías Agiles (SCRUM)
+						Soy Desarrollador web con más de 2 años de experiencia en
+						Javascript. Trabajando con metodologías ágiles (SCRUM) con equipos
+						multidisciplinares, automatizando tareas, participando activamente
+						en la definición de modelos y nuevas funcionalidades según
+						necesidades del cliente, utilizando React.js, Node.js, sequelize,
+						Postgress y librerías como Bootstrap excel.js pdf.kit bull
+						(cronjobs) moment.js etc.
 					</p>
 				</div>
 				<a

@@ -5,7 +5,7 @@ import { useDimensions } from "./use-dimensions";
 import { DesktopIcon, MenuToggle, MobileIcon } from "../../ui/buttons";
 import "./index.css";
 import { SelectLenguageMobile } from "../../selectLenguage";
-import { Particulas } from "../../ui/particles";
+
 const variants = {
 	open: {
 		y: 0,
@@ -65,7 +65,6 @@ export const MenuMobil = () => {
 			className="menuMobil"
 		>
 			<motion.div className="backgroundMenu" variants={sidebar}>
-				{/* {isOpen && <Particulas />} */}
 				<motion.ul variants={variantsUl} className="backgroundUl">
 					<motion.li variants={variants}>
 						<MobileIcon
@@ -117,7 +116,6 @@ export const MenuDesktop = () => {
 			className="menuDesktop"
 		>
 			<motion.div className="backgroundMenu" variants={sidebar}>
-				{/* {isOpen && <Particulas />} */}
 				<motion.ul variants={variantsUl} className="backgroundUl">
 					<motion.li variants={variants}>
 						<DesktopIcon href="#main">Inicio</DesktopIcon>

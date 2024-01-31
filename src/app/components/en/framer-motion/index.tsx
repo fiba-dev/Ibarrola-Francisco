@@ -73,14 +73,6 @@ export const MenuMobilEn = () => {
 			className="menuMobil"
 		>
 			<motion.div className="backgroundMenu" variants={sidebar}>
-				{isOpen && (
-					<Particulas
-						width={"100vw"}
-						height={"100vh"}
-						value={100}
-						repulse={false}
-					/>
-				)}
 				<motion.ul variants={variantsUl} className="backgroundUl">
 					<motion.li variants={variants} whileHover={{ scale: 1.1 }}>
 						<MobileIcon onClick={() => toggleOpen()} href="#main">
@@ -128,14 +120,6 @@ export const MenuDesktopEn = () => {
 		>
 			{" "}
 			<motion.div className="backgroundMenu" variants={sidebar}>
-				{isOpen && (
-					<Particulas
-						width="12rem"
-						height="100vh"
-						value={200}
-						repulse={false}
-					/>
-				)}
 				<motion.ul variants={variantsUl} className="backgroundUl">
 					<motion.li variants={variants} whileHover={{ scale: 1.1 }}>
 						<DesktopIcon href="#main">Main</DesktopIcon>

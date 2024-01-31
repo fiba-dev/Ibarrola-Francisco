@@ -50,11 +50,11 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	color: rgb(255, 255, 255);
+	color: rgba(10, 0, 0, 0.776);
 }
 .div__form {
-	background: rgb(255, 255, 255);
-
+	background: rgba(0, 0, 0, 0);
+	z-index: 0;
 	width: 90vw;
 	height: 50vh;
 	border-radius: 10px;
