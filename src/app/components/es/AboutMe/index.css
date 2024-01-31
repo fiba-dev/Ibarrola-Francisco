@@ -64,6 +64,9 @@
 	align-items: center;
 	text-align: center;
 }
+.titulo {
+	text-align: center;
+}
 .robot {
 	position: absolute;
 	z-index: -10;
@@ -75,25 +78,25 @@
 	padding: 10px;
 
 	border: none;
-	color: rgb(255, 255, 255);
-	background-color: #000000;
+	color: rgb(93, 0, 180);
+	background-color: #00000067;
 	text-decoration: none;
 	font-size: 20px;
 	font-weight: 700;
 	width: 200px;
-	border: solid 1px white;
+	border: solid 1px rgb(93, 0, 180);
 	border-radius: 10px;
-	transition: 0.2s ease-in;
+	transition: 0.5s ease-in;
 	z-index: 0;
 }
 
 .cvlink:hover {
-	color: #000000;
+	color: rgb(93, 0, 180);
 	background-color: rgb(255, 255, 255);
-	border: solid 1px #000000;
-	/* -webkit-box-shadow: 1px 0px 8px 3px rgba(0, 0, 0, 0.75);
-	-moz-box-shadow: 1px 0px 8px 3px rgba(0, 0, 0, 0.75);
-	box-shadow: 1px 0px 8px 3px rgba(0, 0, 0, 0.75); */
+	border: solid 1px rgb(93, 0, 180);
+	-webkit-box-shadow: 1px 0px 8px 3px rgba(93, 0, 180, 0.69);
+	-moz-box-shadow: 1px 0px 8px 3px rgba(93, 0, 180, 0.689);
+	box-shadow: 1px 0px 8px 3px rgba(93, 0, 180, 0.693);
 }
 @media (min-width: 1024px) and (min-height: 500px) {
 	.container {

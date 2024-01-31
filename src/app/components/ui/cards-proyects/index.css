@@ -83,6 +83,7 @@
 	box-shadow: rgba(251, 251, 251, 0.095) 4px 4px 8px;
 	-webkit-box-shadow: rgba(251, 251, 251, 0.095) 4px 4px 8px;
 	-moz-box-shadow: rgba(251, 251, 251, 0.095) 4px 4px 8px;
+	border: solid 1px rgb(93, 0, 180);
 }
 
 /* .div1 {
@@ -177,7 +178,8 @@
 		height: 100%;
 	} */
 	.cardBack {
-		width: 0%;
+		width: 100%;
+		opacity: 0;
 		position: absolute;
 		bottom: 0px;
 		height: 350px;
@@ -202,24 +204,43 @@
 		align-items: center;
 		justify-content: center;
 	}
-
+	.imagenCard {
+		width: 500px;
+		height: 350px;
+		opacity: 0.5;
+	}
 	.card:hover .face,
 	.card:hover .cardBack {
-		background-color: #ffffff;
-		box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-			0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
-			0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-			0 100px 80px rgba(0, 0, 0, 0.12);
+		background-color: #000000ae;
+		/* box-shadow: 5px 5px 3px 0px rgb(255, 0, 0);
+		-webkit-box-shadow: 5px 5px 3px 0px rgba (180, 0, 0, 0.75);
+		-moz-box-shadow: 5px 5px 3px 0px rgb(0, 147, 180); */
 		cursor: pointer;
+		opacity: 1;
+		border: 1px solid rgb(93, 0, 180);
 	}
+	.card:hover .imagenCard {
+		/* animation: dontExpandWidth 1s ease-out; */
 
+		opacity: 0;
+		transition: ease-out 0.5s;
+	}
 	.cardBack.animating {
-		animation: expandWidth 1s ease-in;
+		animation: expandWidth 0.5s ease-in;
 	}
 
 	@keyframes expandWidth {
+		0% {
+		}
 		100% {
-			width: 100%;
+			opacity: 1;
+		}
+	}
+	@keyframes dontExpandWidth {
+		0% {
+		}
+		100% {
+			opacity: 0;
 		}
 	}
 
@@ -238,15 +259,15 @@
 		border: solid 1px rgba(255, 255, 255, 0);
 	}
 	.card:hover .informacion {
-		background-color: rgb(255, 255, 255);
-		color: #000000;
-		border: solid 1px rgb(0, 0, 0);
+		background-color: rgb(0, 0, 0);
+		color: #ffffff;
+		border: solid 1px rgb(255, 255, 255);
 	}
 	.card .informacion:hover {
 		transition: ease-in-out 0.5s;
 		color: rgb(255, 253, 253);
 		background-color: #000000;
-		border: solid 1px rgb(0, 0, 0);
+		border: solid 1px rgb(74, 0, 51);
 	}
 
 	/* .card:hover .cardFront {
@@ -256,15 +277,12 @@
 	} */
 
 	.card:hover p {
-		color: rgb(28, 28, 28);
+		color: rgb(216, 216, 216);
 	}
 	.card:hover h1 {
-		color: rgb(0, 0, 0);
+		color: rgb(255, 255, 255);
 	}
-	.imagenCard {
-		width: 500px;
-		height: 350px;
-	}
+
 	.webpage__detalle {
 		font-size: 21px;
 		color: whitesmoke;

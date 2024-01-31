@@ -73,7 +73,7 @@ export const Particulas = (props) => {
 					},
 					particles: {
 						color: {
-							value: "#ffffff",
+							value: ["#ffffff", "rgb(0, 147, 180)"],
 						},
 						links: {
 							color: "#ffffff",
